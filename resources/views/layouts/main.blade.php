@@ -22,9 +22,14 @@
 </head>
 <body>
 
- @include('partials.navbar')
-     <div class="container mx-auto bg-white my-24 md:mt-30">
+
+     <div class="container mx-auto bg-gray-100 rounded-lg my-4 w-screen grid md:grid-cols-4 grid-cols-1">
+    
+       @include('partials.sidebar')
+     
+       <div class="col-span-3 pt-6 px-2">
        @yield('container')
+       </div>
      </div>
 
 </body>

@@ -8,7 +8,7 @@
 @foreach ($categories as $category)
 	<article class="p-3 bg-gray-300 rounded-lg">
 	
-	<a href="/categories/{{ $category->slug }}">{{ $category->name }}</a>
+	<a href="/room?category={{ $category->slug }}">{{ $category->name }}</a>
 
 	</article>
 @endforeach
